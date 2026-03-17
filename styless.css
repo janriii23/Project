@@ -1,0 +1,117 @@
+/* 
+   6. CONTACT PAGE STYLES 
+    */
+
+.contact-wrapper {
+    max-width: 700px; /* Slightly wider to fit info */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- New Contact Info Box --- */
+.contact-info-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+}
+
+/* Icons */
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background: rgba(56, 189, 248, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+/* Text */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-box span {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-box a {
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.text-box a:hover {
+    color: var(--primary);
+}
+
+/* --- Form Styles --- */
+.form-title {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-light);
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+/* Footer (Keep existing) */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-dim);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 50px;
+}
